@@ -30,7 +30,7 @@ function addItem(item){
 // //Create a function called 'removeItem' that takes in one parameter called 'index'. Inside of the removeItem function, remove the item that corresponds to the index parameter from the groceries array above by using splice. Then, invoke the displayData() function inside of your removeItem function.
 
 function removeItem(index){
-  groceries.splice(index)
+  groceries.splice(index, 1)
   displayData()
 }
 
@@ -40,7 +40,10 @@ function removeItem(index){
 function checkGroceryCount(){ 
   if(groceries.length >= 5){
     return 'That looks like a big trip';
-  } else if(groceries.length == 1){
+  } else if (groceries.length === 0){
+    return 'no items';
+  }
+    else if(groceries.length == 1){
     return '1 item';
   } else if(groceries.length > 1 && groceries.length < 5)
     return `${groceries.length} items`
