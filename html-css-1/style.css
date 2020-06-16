@@ -28,11 +28,21 @@ header span {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
+  
 
   
   
 }
 
+.teal {
+  height:33%;
+  min-height: ;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
 
 .three-boxes {
   width: 150px;
@@ -41,12 +51,29 @@ header span {
   border-radius: 10%;
 }
 
+.orange {
+  height:33%;
+  min-height: fit-content;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+
 .two-boxes {
   width: 275px;
   height: 140px;
   background-color: rgb(252, 187, 66);
   
 }
+
+/* .img-text {
+  height:33%;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+} */
 
 .text-box {
   width: 220px;
